@@ -1,0 +1,9 @@
+[package]
+
+name = "adt"
+version = "0.0.0"
+authors = [ "Nikita Pekin <contact@nikitapek.in>" ]
+
+[lib]
+
+name = "adt"
