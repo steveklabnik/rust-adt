@@ -18,7 +18,8 @@ It is also meant to help me keep track of breaking Rust changes, and how to fix 
 
 * Stack
     * Linked List Stack
-* Linked List
-    * Singly Linked List
-    * Doubly Linked List
+* List
+    * Linked
+        * Singly Linked
+        * Doubly Linked
 * Queue
