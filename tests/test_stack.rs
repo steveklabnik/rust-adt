@@ -2,12 +2,15 @@ extern crate adt;
 
 #[cfg(test)]
 mod test {
-    use adt::Stack;
+    use adt::{
+        ArrayStack,
+        Stack
+    };
 
     #[test]
     fn test_stack() {
         // Initialize the test stack.
-        let mut stack: Stack<int> = Stack::new();
+        let mut stack: ArrayStack<int> = Stack::new();
 
         // Add some values to the stack.
         stack.push(10);
