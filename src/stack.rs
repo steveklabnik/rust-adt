@@ -14,6 +14,7 @@ pub trait Stack<T> {
 
 /// TODO
 pub struct ArrayStack<T> {
+    /// TODO
     elements: Vec<T>
 }
 
