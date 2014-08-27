@@ -3,4 +3,5 @@
 pub use stack::ArrayStack;
 pub use stack::Stack;
 
+mod list;
 mod stack;
