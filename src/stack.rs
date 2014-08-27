@@ -1,6 +1,5 @@
 /// TODO
 pub trait Stack<T> {
-    fn new() -> Self;
     fn push(&mut self, elem: T);
     fn pop(&mut self) -> Option<T>;
     fn peek(&self) -> Option<&T>;
@@ -13,12 +12,15 @@ pub struct ArrayStack<T> {
 }
 
 /// TODO
-impl<T> Stack<T> for ArrayStack<T> {
+impl<T> ArrayStack<T> {
     /// TODO
-    fn new() -> ArrayStack<T> {
+    pub fn new() -> ArrayStack<T> {
         ArrayStack { elements: Vec::new() }
     }
+}
 
+/// TODO
+impl<T> Stack<T> for ArrayStack<T> {
     /// TODO
     fn push(&mut self, elem: T) {
         self.elements.push(elem);
@@ -50,7 +52,7 @@ mod tests {
     #[test]
     fn test_new() {
         // Initialize the test stack.
-        let stack: ArrayStack<int> = Stack::new();
+        let stack: ArrayStack<int> = ArrayStack::new();
 
         // Manually construct the Stack object expected from Stack::new().
         let expected_stack: ArrayStack<int> = ArrayStack { elements: Vec::new() };
@@ -62,7 +64,7 @@ mod tests {
     #[test]
     fn test_push() {
         // Initialize a test stack.
-        let mut stack: ArrayStack<int> = Stack::new();
+        let mut stack: ArrayStack<int> = ArrayStack::new();
 
         // Push an element onto the stack.
         stack.push(10);

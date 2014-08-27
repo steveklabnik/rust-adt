@@ -10,7 +10,7 @@ mod test {
     #[test]
     fn test_stack() {
         // Initialize the test stack.
-        let mut stack: ArrayStack<int> = Stack::new();
+        let mut stack: ArrayStack<int> = ArrayStack::new();
 
         // Add some values to the stack.
         stack.push(10);
