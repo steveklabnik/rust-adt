@@ -43,7 +43,7 @@ mod test {
         stack.push(22);
 
         // Verify that the pop() function works correctly.
-        assert_eq!(stack.pop().unwrap(), 22);
+        assert_eq!(stack.pop(), Some(22));
         assert_eq!(stack.size(), 2);
     }
 
@@ -58,7 +58,7 @@ mod test {
         stack.push(22);
 
         // Verify that the peek() function works correctly.
-        assert_eq!(stack.peek().unwrap(), &22);
+        assert_eq!(stack.peek(), Some(&22));
         assert_eq!(stack.size(), 3);
     }
 
