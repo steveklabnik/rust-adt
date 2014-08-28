@@ -14,9 +14,14 @@ fn main() {
     stack.push(2);
     stack.push(3);
 
+    // Peek an element from the stack.
+    println!("{}", stack.peek());
+
     // Pop some elements off the stack.
     println!("{}", stack.pop());
+    println!("{}", stack.pop());
+    println!("{}", stack.pop());
 
-    // Peek some elements from the stack.
-    println!("{}", stack.peek());
+    // Attempt to pop an element from the empty stack.
+    println!("{}", stack.pop());
 }
