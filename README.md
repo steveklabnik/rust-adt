@@ -12,14 +12,14 @@ It is also meant to help me keep track of breaking Rust changes, and how to fix 
 ### Implemented
 
 * Stack
-    * Vec Stack
+    * `Vec` Stack
+    * `DList` Stack
 
 ### TBD
 
-* Stack
-    * Linked List Stack
 * Queue
 * List
+    * `Vec` List
 
 ### Won't Implement
 
