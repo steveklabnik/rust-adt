@@ -9,7 +9,7 @@ env:
 before_script:
     - rustc -v
     - cargo -V
-script: 
+script:
     - cargo build -v
     - cargo test -v
     - cargo doc -v
