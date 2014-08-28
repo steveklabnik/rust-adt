@@ -5,7 +5,6 @@ os:
 env:
     global:
         - secure: ZnwuEcT9yCGDI02iHqLgMPfseB7IIIIxSgPywoIYxUVXsfgG0e60IicGVcFYrgliBwlMKroAGEEB4K6uXjL5FZsX9nJqtsmze6yn99HkWkQftv/4FRdiqkT99ozZpiCmQreWgarVKAfhgGEqKcJyTCFX01UfhiEwvOFMNlyqKs8=
-        - LD_LIBRARY_PATH: /usr/local/lib
 before_script:
     - rustc -v
     - cargo -V
