@@ -1,8 +1,8 @@
 #![deny(non_camel_case_types)]
 
 pub use stack::{
-    VecStack,
-    Stack
+    Stack,
+    VecStack
 };
 
 mod stack;
