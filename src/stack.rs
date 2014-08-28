@@ -14,21 +14,21 @@ pub trait Stack<T> {
 }
 
 /// TODO
-pub struct ArrayStack<T> {
+pub struct VecStack<T> {
     /// TODO
     elements: Vec<T>
 }
 
 /// TODO
-impl<T> ArrayStack<T> {
+impl<T> VecStack<T> {
     /// TODO
-    pub fn new() -> ArrayStack<T> {
-        ArrayStack { elements: Vec::new() }
+    pub fn new() -> VecStack<T> {
+        VecStack { elements: Vec::new() }
     }
 }
 
 /// TODO
-impl<T> Stack<T> for ArrayStack<T> {
+impl<T> Stack<T> for VecStack<T> {
     /// TODO
     fn push(&mut self, elem: T) {
         self.elements.push(elem);

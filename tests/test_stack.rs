@@ -3,14 +3,14 @@ extern crate adt;
 #[cfg(test)]
 mod test {
     use adt::{
-        ArrayStack,
+        VecStack,
         Stack
     };
 
     #[test]
-    fn test_new_array_stack() {
+    fn test_new_vec_stack() {
         // Initialize the test stack.
-        let stack: ArrayStack<int> = ArrayStack::new();
+        let stack: VecStack<int> = VecStack::new();
 
         // Verify that the stack is empty.
         assert!(stack.is_empty());
@@ -18,9 +18,9 @@ mod test {
     }
 
     #[test]
-    fn test_push_array_stack() {
+    fn test_push_vec_stack() {
         // Initialize a test stack.
-        let mut stack: ArrayStack<int> = ArrayStack::new();
+        let mut stack: VecStack<int> = VecStack::new();
 
         // Push some elements onto the stack.
         stack.push(1);
@@ -33,9 +33,9 @@ mod test {
     }
 
     #[test]
-    fn test_push_then_pop_array_stack() {
+    fn test_push_then_pop_vec_stack() {
         // Initialize a test stack.
-        let mut stack: ArrayStack<int> = ArrayStack::new();
+        let mut stack: VecStack<int> = VecStack::new();
 
         // Push some elements onto the stack.
         stack.push(1);
@@ -48,9 +48,9 @@ mod test {
     }
 
     #[test]
-    fn test_push_then_peek_array_stack() {
+    fn test_push_then_peek_vec_stack() {
         // Initialize a test stack.
-        let mut stack: ArrayStack<int> = ArrayStack::new();
+        let mut stack: VecStack<int> = VecStack::new();
 
         // Push some elements onto the stack.
         stack.push(1);
@@ -63,9 +63,9 @@ mod test {
     }
 
     #[test]
-    fn test_pop_until_empty_array_stack() {
+    fn test_pop_until_empty_vec_stack() {
         // Initialize a test stack.
-        let mut stack: ArrayStack<int> = ArrayStack::new();
+        let mut stack: VecStack<int> = VecStack::new();
 
         // Push some elements onto the stack.
         stack.push(1);
@@ -83,18 +83,18 @@ mod test {
     }
 
     #[test]
-    fn test_pop_empty_array_stack() {
+    fn test_pop_empty_vec_stack() {
         // Initialize a test stack.
-        let mut stack: ArrayStack<int> = ArrayStack::new();
+        let mut stack: VecStack<int> = VecStack::new();
 
         // Pop a non-existing element off the stack.
         assert_eq!(stack.pop(), None);
     }
 
     #[test]
-    fn test_peek_empty_array_stack() {
+    fn test_peek_empty_vec_stack() {
         // Initialize a test stack.
-        let stack: ArrayStack<int> = ArrayStack::new();
+        let stack: VecStack<int> = VecStack::new();
 
         // Peek a non-existing element from the stack.
         assert_eq!(stack.peek(), None);
