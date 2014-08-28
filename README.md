@@ -14,12 +14,14 @@ It is also meant to help me keep track of breaking Rust changes, and how to fix 
 * Stack
     * `Vec` Stack
     * `DList` Stack
+* Queue
+    * `DList` Queue
 
 ### TBD
 
-* Queue
 * List
     * `Vec` List
+* BTree
 
 ### Won't Implement
 
