@@ -2,7 +2,7 @@ extern crate adt;
 
 #[cfg(test)]
 mod test {
-    use adt::{
+    use adt::stack::{
         Stack,
         VecStack
     };

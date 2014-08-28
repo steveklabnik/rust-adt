@@ -1,6 +1,6 @@
 extern crate adt;
 
-use adt::{
+use adt::stack::{
     Stack,
     VecStack
 };
