@@ -31,4 +31,8 @@ impl<T> Queue<T> for DListQueue<T> {
     fn size(&self) -> uint {
         self.list.len()
     }
+
+    fn front<'a>(&'a self) -> Option<&'a T> {
+        self.list.front()
+    }
 }

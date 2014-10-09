@@ -14,6 +14,9 @@ fn main() {
     queue.enqueue(2);
     queue.enqueue(3);
 
+    // Retrieve the front element from the queue.
+    println!("{}", queue.front());
+
     // Dequeue some elements off the queue.
     println!("{}", queue.dequeue());
     println!("{}", queue.dequeue());

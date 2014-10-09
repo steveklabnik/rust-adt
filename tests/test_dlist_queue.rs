@@ -18,7 +18,7 @@ mod test {
     }
 
     #[test]
-    fn test_enqueue_queue() {
+    fn test_enqueue_then_peek_queue() {
         // Initialize a test queue.
         let mut queue: DListQueue<int> = DListQueue::new();
 
@@ -30,10 +30,12 @@ mod test {
         // Verify that the queue contains 3 elements.
         assert!(!queue.is_empty());
         assert_eq!(queue.size(), 3);
+        assert_eq!(queue.front().unwrap(), &1);
+        assert_eq!(queue.size(), 3);
     }
 
     #[test]
-    fn test_enqueue_then_dequeue_queue() {
+    fn test_enqueue_then_dequeue_then_peek_queue() {
         // Initialize a test queue.
         let mut queue: DListQueue<int> = DListQueue::new();
 
@@ -44,6 +46,8 @@ mod test {
 
         // Verify that the dequeue() function works correctly.
         assert_eq!(queue.dequeue(), Some(1));
+        assert_eq!(queue.size(), 2);
+        assert_eq!(queue.front().unwrap(), &43);
         assert_eq!(queue.size(), 2);
     }
 
