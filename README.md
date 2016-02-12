@@ -1,5 +1,4 @@
-# rust-adt [![Build Status](https://travis-ci.org/Indiv0/rust-adt.svg?branch=master)](https://travis-ci.org/Indiv0/rust-adt)
-
+# rust-adt [![Build Status](https://travis-ci.org/indiv0/rust-adt.svg?branch=master)](https://travis-ci.org/indiv0/rust-adt)
 A collection of [abstract data types](http://en.wikipedia.org/wiki/Abstract_data_type), written in Rust.
 
 ## Purpose
